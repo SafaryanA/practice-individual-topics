@@ -55,7 +55,7 @@
 10. Реализовать DistributedQueue, работающую между разными вкладками браузера.
 */
 
-/* 
+
 
 // 1.  Создать класс Car с полями brand и year, добавить метод getInfo(), который возвращает строку с информацией.
 class Car {
@@ -192,10 +192,10 @@ class Clock {
 const clock = new Clock()
 console.log(clock.showTime())
 
- */
+ 
 
 // 1.  Добавить приватные поля (через #) в BankAccount, скрыв balance.
-/* class BankAccount {
+ class BankAccount {
 	#balance
 	constructor() {
 		this.#balance = 15000
@@ -209,9 +209,9 @@ const bankAccountAmanda = new BankAccount()
 console.log(bankAccountAmanda)
 console.log(bankAccountAmanda.deposit)
 console.log(bankAccountAmanda.deposit(2500))
- */
+ 
 // 2.  Реализовать класс User с геттером fullName(), объединяющим firstName и lastName.
-/* class User {
+ class User {
 	constructor(firstName, lastName) {
 		this.firstName = firstName
 		this.lastName = lastName
@@ -220,11 +220,11 @@ console.log(bankAccountAmanda.deposit(2500))
 		return `Я ${this.firstName} ${this.lastName}`
 	}
 }
-const user = new User('Artur', 'Safaryan')
+const userOne = new User('Artur', 'Safaryan')
 console.log(user)
-console.log(user.firstName)
-console.log(user.lastName)
-console.log(user.fullName) */
+console.log(userOne.firstName)
+console.log(userOne.lastName)
+console.log(userOne.fullName) 
 
 // 3.  Добавить сеттер setAge() в Person, который не позволит установить возраст < 0.
 class Person {
@@ -245,14 +245,14 @@ class Person {
 	}
 }
 
-const person = new Person('Артур', 30)
-console.log(person.age)
+const personOne = new Person('Артур', 30)
+console.log(personOne.age)
 
 person.age = -5
-console.log(person.age)
+console.log(personOne.age)
 
 person.age = 25
-console.log(person.age)
+console.log(personOne.age)
 
 // 4.  Сделать класс Triangle, который проверяет, можно ли создать треугольник с указанными сторонами.
 class Triangle {
